@@ -3,10 +3,134 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+body.theme_light {
+  --accent-color: #FF8DCB;
+  --accent-color-cover: #FFC2E6;
+  --accent-color-title: #353430;
+  --accent-color-text: #353430;
+  --accent-color-subtite: #353430;
+  --accent-color-button: #353430;
+  --accent-color-button-hover: rgba(50, 49, 45, 0.6);
+  --background-image: url(../images/cover-image-light.png);
+  --window: 98vw;
+  --font-size: 18px;
+}
+
+.theme_light .rec-indicator {
+  display: none;
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --accent-color-cover: #FFC2E6;
+    --accent-color-title: #353430;
+    --accent-color-text: #353430;
+    --accent-color-subtite: #353430;
+    --accent-color-button: #353430;
+    --accent-color-button-hover: rgba(50, 49, 45, 0.6);
+    --background-image: url(../images/cover-image-light.png);
+    --window: 375px;
+    --font-size: 18px;
+  }
+
+  .decorated-zone::after {
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .decorated-zone::before {
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  .header__decoration {
+    color: var(--accent-color);
+  }
+  
+  .rec-indicator {
+    display: none;
+  }
+  
+  .header__decoration::before {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
+  }
+  
+  .header__theme-menu-button {
+    color: var(--accent-color-button);
+  }
+  
+  .button:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  .header__title {
+    color: var(--accent-color-cover);
+  }
+  
+  .title-decor {
+    background-color: var(--accent-color-title);
+  }
+  
+  
+  .content__card-title {
+    color: var(--accent-color-subtite);
+  }
+  
+  .content__card-section-subtitle,
+  .content__card-section-title {
+    color: var(--accent-color-title);
+  }
+  
+  .content__card-section-text {
+    color: var(--accent-color-text);
+  }
+  
+  .content__card-section-text-assign {
+    text-shadow: 2px 2px var(--accent-color);
+    border-bottom: 1px solid var(--accent-color-text);
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color-button-hover);
+  }
+  
+  button:hover {
+    border: 1px solid var(--accent-color-button-hover);;
+  }
+  
+  button:focus-visible {
+    border-bottom: 1px solid var(--accent-color-button);
+  }
+  
+  .footer-content {
+    color: var(--accent-color-cover);
+    text-shadow: 2px 2px 0 var(--accent-color);
+  }
+  
+  .footer-content::after {
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .footer-content::before {
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  .header__text {
+    color: var(--accent-color-title);
+  }
+  
+  .content__card-section-text-assign {
+    border-bottom: 0px solid var(--accent-color-text);
+  }
 }

@@ -3,10 +3,128 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+body.theme_dark {
+  --accent-color: #FF0070;
+  --accent-color-cover: #DB00FF;
+  --accent-color-title: #000028;
+  --accent-color-subtite: #FF0070;
+  --accent-color-text: #F1B2CE;
+  --accent-color-button: #FF0070;
+  --accent-color-button-hover: rgba(255, 0, 112, 0.6);
+  --background-image: url(../images/cover-image-dark.png);
+  --window: 98vw;
+  --font-size: 18px;
+}
+
+.theme-dark .decorated-zone::after {
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.theme-dark .decorated-zone::before {
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__decoration {
+  color: var(--accent-color);
+}
+
+.theme-dark .header__decoration::before {
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button {
+  color: var(--accent-color-button);
+}
+
+.theme-dark .button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__title {
+  color: var(--accent-color-cover);
+}
+
+.theme-dark .title-decor {
+  background-color: var(--accent-color-title);
+}
+
+
+.theme-dark .content__card-title {
+  color: var(--accent-color-subtite);
+}
+
+.theme-dark .content__card-section-subtitle,
+.theme-dark .content__card-section-title {
+  color: var(--accent-color-title);
+}
+
+.theme-dark .content__card-section-text {
+  color: var(--accent-color-text);
+}
+
+.theme-dark .content__card-section-text-assign {
+  text-shadow: 2px 2px var(--accent-color);
+  border-bottom: 1px solid var(--accent-color-text);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color-button-hover);
+}
+
+.theme-dark button:hover {
+  border: 1px solid var(--accent-color-button-hover);;
+}
+
+.theme-dark button:focus-visible {
+  border-bottom: 1px solid var(--accent-color-button);
+}
+
+.theme-dark .footer-content {
+  color: var(--accent-color-cover);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.theme-dark .footer-content::after {
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.theme-dark .footer-content::before {
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__text {
+  color: var(--accent-color-title);
+}
+
+.theme-dark .content__card-section-text-assign {
+  border-bottom: 0px solid var(--accent-color-text);
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: var(--background-image);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #FF0070;
+    --accent-color-cover: #DB00FF;
+    --accent-color-title: #000028;
+    --accent-color-subtite: #FF0070;
+    --accent-color-text: #F1B2CE;
+    --accent-color-button: #FF0070;
+    --accent-color-button-hover: rgba(255, 0, 112, 0.6);
+    --background-image: url(../images/cover-image-dark.png);
+    --window: 375px;
+    --font-size: 18px;
+  }
 }
