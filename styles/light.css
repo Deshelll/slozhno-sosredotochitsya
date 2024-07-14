@@ -96,7 +96,7 @@ body.theme_light {
   
   .content__card-section-text-assign {
     text-shadow: 2px 2px var(--accent-color);
-    border-bottom: 1px solid var(--accent-color-text);
+    border-bottom: 0px solid var(--accent-color-text);
   }
   
   .header__theme-menu-button_active {
@@ -128,9 +128,5 @@ body.theme_light {
   
   .header__text {
     color: var(--accent-color-title);
-  }
-  
-  .content__card-section-text-assign {
-    border-bottom: 0px solid var(--accent-color-text);
   }
 }

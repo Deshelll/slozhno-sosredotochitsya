@@ -6,7 +6,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  width: var(--window);
   margin: auto;
   background-image: var(--background-image);
   background-position: center;
@@ -237,7 +236,7 @@ img {
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
   .content-images {
     margin: 0;
     grid-template-columns: auto;
@@ -378,6 +377,7 @@ img {
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
 
   .header__theme-menu {
@@ -390,22 +390,12 @@ img {
     gap: 0;
   }
 
-  .header__theme-menu-list {
-    justify-content: flex-end;
-  }
-
   .header__theme-menu-item {
     padding-top: 0;
   }
 
   .header__theme-menu-item {
     margin-right: 15px;
-  }
-
-  content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 
   .header__title {
@@ -525,6 +515,9 @@ img {
 
   .content {
     margin: 60px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .content__card-section-text {

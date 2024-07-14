@@ -67,7 +67,7 @@ body.theme_dark {
 
 .theme-dark .content__card-section-text-assign {
   text-shadow: 2px 2px var(--accent-color);
-  border-bottom: 1px solid var(--accent-color-text);
+  border-bottom: 0px solid var(--accent-color-text);
 }
 
 .theme-dark .header__theme-menu-button_active {
@@ -99,10 +99,6 @@ body.theme_dark {
 
 .theme-dark .header__text {
   color: var(--accent-color-title);
-}
-
-.theme-dark .content__card-section-text-assign {
-  border-bottom: 0px solid var(--accent-color-text);
 }
 
 .page.theme_dark {
