@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-body.theme_light {
+:root.theme_light {
   --accent-color: #FF8DCB;
   --accent-color-cover: #FFC2E6;
   --accent-color-title: #353430;
@@ -37,7 +37,7 @@ body.theme_light {
     --accent-color-button: #353430;
     --accent-color-button-hover: rgba(50, 49, 45, 0.6);
     --background-image: url(../images/cover-image-light.png);
-    --window: 375px;
+    --window: 98vw;
     --font-size: 18px;
   }
 
@@ -77,7 +77,7 @@ body.theme_light {
   }
   
   .title-decor {
-    background-color: var(--accent-color-title);
+    background-color: var(--accent-color);
   }
   
   
