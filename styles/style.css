@@ -120,7 +120,7 @@ button:focus-visible {
   color: var(--accent-color-cover);
   text-shadow: 4px 4px 0 var(--accent-color);
   margin: 0;
-  padding: 55px 0 35px 0;
+  padding: 60px 0 50px 0;
   line-height: 95.7px;
   letter-spacing: 0;
 }
@@ -235,6 +235,13 @@ img {
   border-bottom: 1px solid var(--accent-color);
 }
 
+.section__grid_center {
+  margin-top: 5px;
+}
+
+.grid__column__left:nth-child(n+2) {
+  margin-top: 6px;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .content-images {
