@@ -22,7 +22,7 @@
 .decorated-zone {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  position: relative;  
+  position: relative;
   padding: 10px;
   height: 100vh;
 }
@@ -392,9 +392,6 @@ img {
 
   .header__theme-menu-item {
     padding-top: 0;
-  }
-
-  .header__theme-menu-item {
     margin-right: 15px;
   }
 
@@ -445,11 +442,12 @@ img {
   }
 
   .content__card-section-title {
-    margin-bottom: 10px;
+    grid-area: header;
+    margin: 0;
   }
 
   .content__card-section-text {
-    margin-top: 10px;
+    margin: 0;
   }
 
   .section__grid_center .section__center-content:nth-child(2) {
@@ -481,10 +479,6 @@ img {
     margin-top: 0;
   }
 
-  .content__card-section-text {
-    margin-top: 10px;
-  }
-
   .grid__column__left .content__card-section:nth-child(2) {
     grid-column: 2 / 3;
   }
@@ -509,19 +503,11 @@ img {
     margin-top: 20px;
   }
 
-  .content__card-section-title {
-    margin: 0;
-  }
-
   .content {
     margin: 60px 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-
-  .content__card-section-text {
-    margin: 0;
   }
 
   .content__card-section-subtitle:nth-child(n+3) {
@@ -538,10 +524,6 @@ img {
       "sunset sunset ice-cream"
       "tape books ice-cream"
       "tape street street";
-  }
-
-  .content__card-section-title {
-    grid-area: header;
   }
 
   .image__sunset {
