@@ -392,11 +392,6 @@ img {
     padding-top: 9px;
   }
 
-  .content__card-section-subtitle,
-  .content__card-section-title:nth-child(n+2) {
-    margin-top: 2px;
-  }
-
   .header__theme-menu {
     width: 100vw;
     align-items: center;
@@ -417,7 +412,6 @@ img {
   .header__title {
     padding: 22% 0 0 0;
     font-size: clamp(9.65rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-top: 10px;
   }
 
   .header__text {
@@ -520,8 +514,12 @@ img {
     gap: 63px;
   }
 
-  .double__title:first {
+  .content__card-section-subtitle:first {
     margin-top: 20px;
+  }
+
+  .content__card-section-subtitle {
+    margin-top: 2px;
   }
   
   .content-images {
