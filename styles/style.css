@@ -16,7 +16,7 @@
 }
 
 .header {
-  height: min(668px);
+  height: 100vh;
 }
 
 .decorated-zone {
@@ -113,6 +113,10 @@ button:hover {
 
 button:focus-visible {
   border-bottom: 1px solid var(--accent-color-button);
+}
+
+.header__advice {
+  max-width: 98vw;
 }
 
 .header__title {
@@ -440,6 +444,7 @@ img {
     grid-template-columns: repeat(auto-fit, 315px);
     gap: 20px;
     padding-top: 8px;
+    margin-top: 0px;
   }
 
   .section__grid_center-title {
@@ -563,10 +568,6 @@ img {
   .header__theme-menu-item:nth-child(n+2) {
     padding-top: 0;
     margin-right: 15px;
-  }
-
-  .section__grid_center {
-    margin-top: 0px;
   }
   
   .grid__column__left:nth-child(n+2) {
