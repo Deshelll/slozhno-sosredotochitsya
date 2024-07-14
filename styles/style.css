@@ -171,7 +171,6 @@ button:focus-visible {
 
 .content__card-section-text {
   margin-top: 9px;
-  margin-bottom: 18px;
   font-size: var(--font-size);
   line-height: 23.4px;
   color: var(--accent-color-text);
@@ -379,6 +378,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-top: 9px;
   }
 
   .header__theme-menu {
@@ -549,14 +549,6 @@ img {
   .footer-content {
     padding-top: 40px;
     font-size: clamp(9.9rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-  
-  .double__title {
-    margin-top: 20px;
-  }
-
-  .header__theme-menu-list {
-    padding-top: 9px;
   }
 
   .header__theme-menu-item:nth-child(n+2) {
