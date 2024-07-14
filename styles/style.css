@@ -564,4 +564,12 @@ img {
     padding-top: 0;
     margin-right: 15px;
   }
+
+  .section__grid_center {
+    margin-top: 0px;
+  }
+  
+  .grid__column__left:nth-child(n+2) {
+    margin-top: 0px;
+  }
 }
