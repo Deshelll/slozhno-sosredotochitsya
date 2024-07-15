@@ -40,7 +40,3 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
-
-html, body {
-  overflow-x: hidden;
-}
