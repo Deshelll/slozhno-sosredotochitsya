@@ -103,6 +103,7 @@
 
 button {
   text-align: center;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
