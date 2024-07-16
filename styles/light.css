@@ -3,13 +3,14 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_light {
+:root body.theme_light {
   --accent-color: #FF8DCB;
   --accent-color-cover: #FFC2E6;
   --accent-color-title: #353430;
   --accent-color-text: #353430;
   --accent-color-subtite: #353430;
   --accent-color-button: #353430;
+  --accent-color-corner:#353430;
   --accent-color-background: #FFEEF6;
   --accent-color-button-hover: rgba(50, 49, 45, 0.6);
   --background-image: url(../images/cover-image-light.png);
@@ -32,6 +33,7 @@
     --accent-color-text: #353430;
     --accent-color-subtite: #353430;
     --accent-color-button: #353430;
+    --accent-color-corner:#353430;
     --accent-color-background: #FFEEF6;
     --accent-color-button-hover: rgba(50, 49, 45, 0.6);
     --background-image: url(../images/cover-image-light.png);

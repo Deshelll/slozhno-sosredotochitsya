@@ -40,15 +40,15 @@
 .corner-style::after {
   top: 10px;
   right: 10px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color-corner);
+  border-right: 1px solid var(--accent-color-corner);
 }
 
 .corner-style::before {
   bottom: 10px;
   left: 10px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color-corner);
+  border-bottom: 1px solid var(--accent-color-corner);
 }
 
 .header__decoration {
@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-top: 65px;
+  padding-top: 63px;
 }
 
 .header__theme-menu-list {
@@ -107,7 +107,7 @@ button {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color-button-hover);
+  border: 1px solid var(--accent-color-button);
 }
 
 button:hover {
@@ -127,7 +127,7 @@ button:focus-visible {
   color: var(--accent-color-cover);
   text-shadow: 4px 4px 0 var(--accent-color);
   margin: 0;
-  padding: 60px 0 50px 0;
+  padding: 62px 0 50px 0;
   line-height: 95.7px;
   letter-spacing: 0;
 }
@@ -192,7 +192,18 @@ button:focus-visible {
 
 .content__card-section-text-assign {
   text-shadow: 2px 2px var(--accent-color);
-  border-bottom: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.content__card-section-text-assign:hover {
+  border-bottom: 1px solid var(--accent-color-text);
+}
+
+.content__card-section-text-assign:focus {
+  text-decoration: none;
+  outline: 1px solid var(--accent-color-text);
+  outline-offset: 2px;
 }
 
 .gallery {
@@ -240,6 +251,21 @@ img {
     min-height: 1024px;
   }
   
+  .header__decoration {
+    top: 21px;
+    right: 10px;
+  }
+
+  .corner-style::after {
+    top: 20px;
+    right: 0;
+  }
+  
+  .corner-style::before {
+    bottom: 20px;
+    left: 20px;
+  }
+
   .content-images {
     margin: 0;
     grid-template-columns: auto;
@@ -250,6 +276,14 @@ img {
       "sunset sunset ice-cream"
       "tape books ice-cream"
       "tape street street";
+  }
+
+  .content {
+    gap: 27px;
+  }
+
+  .content__distractions {
+    margin: 0;
   }
 
   .content__card-section-title {
@@ -282,13 +316,21 @@ img {
     gap: 20px;
   }
 
+  .content__causes:nth-child(n+2) {
+    margin: 0;
+  }
+
   .content,
   .footer {
     margin: 60px 20px 0 20px;
   }
 
+  .footer {
+    margin-left: 0;
+  }
+
   .gallery {
-    margin: 28px 20px 0 20px;
+    margin: 80px 20px 0 20px;
   }
 
   .content__card-title {
@@ -341,7 +383,7 @@ img {
   }
 
   .header__title {
-    padding: 15% 0 0 0;
+    padding: 16% 0 0 0;
   }
   
   .header__advice {
@@ -367,16 +409,18 @@ img {
     margin-bottom: 54px;
   }
 
-  .section__center-content {
+  .section__distractions-content {
     margin-top: 20px;
   }
 
   .double__title {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .footer-content {
     min-height: 1024px;
+    letter-spacing: normal;
+    padding-left: 20px;
   }
 }
 
@@ -385,6 +429,20 @@ img {
     min-height: 768px;
   }
   
+  .header__decoration {
+    top: 21px;
+    right: 30px;
+  }
+
+  .corner-style::after {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .corner-style::before {
+    bottom: 20px;
+    left: 20px;
+  }
 
   .header__theme-menu-list {
     display: flex;
@@ -402,6 +460,7 @@ img {
     width: 98vw;
     align-items: center;
     padding: 0;
+    padding-left: 15px;
   }
 
   .decorated-zone {
@@ -411,7 +470,7 @@ img {
   .header__theme-menu-item {
     display: flex;
     padding-top: 0;
-    margin-right: 15px;
+    margin-right: 10px;
     align-items: center;
   }
 
@@ -433,7 +492,7 @@ img {
     display: flex;
     justify-content: right;
     padding-top: 7%;
-    padding-right: 30px;
+    padding-right: 10px;
   }
 
   .content__card-section-text {
@@ -441,20 +500,22 @@ img {
   }
 
   .content__distractions {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 315px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding-top: 8px;
     margin-top: 0px;
   }
-
+  
   .content__distractions-title {
-    grid-column: 1 / -1;
+    /*grid-column: 1 / -1;*/
+    flex: 1 1 100%;
     margin-bottom: 20px;
   }
 
-  .section__center-content {
+  .section__distractions-content {
     margin-top: 0;
+    flex: 1 1 calc(33.333% - 20px);
   }
 
   .content__card-section {
@@ -466,17 +527,17 @@ img {
     margin: 0;
   }
 
-  .content__distractions .section__center-content:nth-child(n+2) {
+  /*.content__distractions .section__distractions-content:nth-child(n+2) {
     grid-column: 1 / 2;
   }
 
-  .content__distractions .section__center-content:nth-child(n+3) {
+  .content__distractions .section__distractions-content:nth-child(n+3) {
     grid-column: 2 / 3;
   }
 
-  .content__distractions .section__center-content:nth-child(n+4) {
+  .content__distractions .section__distractions-content:nth-child(n+4) {
     grid-column: 3 / 4;
-  }
+  }*/
 
   .content__causes {
     display: grid;
@@ -561,9 +622,12 @@ img {
     margin: 65px 20px 0 20px;
   }
 
+  .footer {
+    margin-top: 60px;
+  }
+
   .footer-content {
     min-height: 768px;
-    padding-top: 40px;
     font-size: clamp(9.9rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
