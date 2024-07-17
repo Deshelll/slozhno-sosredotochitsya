@@ -234,6 +234,10 @@ img {
   margin-top: 21px;
 }
 
+h4.content__card-section-title {
+  font-weight: normal;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .header {
     min-height: 1024px;
