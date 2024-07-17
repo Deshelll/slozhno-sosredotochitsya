@@ -168,10 +168,6 @@ button:focus-visible {
   color: var(--accent-color-title);
   margin-bottom: 0;
   margin-top: 20px;
-  font-weight: normal;
-}
-
-.content__card-section-title {
   font-weight: bold;
 }
 
@@ -280,6 +276,7 @@ img {
 
   .content__card-section-title {
     grid-area: header;
+    margin-top: 0;
   }
 
   .image__sunset {
@@ -328,10 +325,6 @@ img {
   .content__card-title {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
-  }
-
-  .content__card-section-title {
-    margin-top: 0;
   }
 
   .content__card-section {
