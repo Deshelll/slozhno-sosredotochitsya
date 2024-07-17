@@ -25,6 +25,12 @@
   */
 }
 
+.theme_light .rec-indicator{
+  display: none;
+}
+
+
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
@@ -41,7 +47,7 @@
     --font-size: 18px;
   }
 
-  .rec-indicator {
+  .theme_auto .rec-indicator {
     display: none;
   }
 }
